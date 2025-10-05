@@ -13,7 +13,7 @@ main {
 
 .card {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  min-height: 750px;
+  min-height: 800px;
   will-change: transform;
   overflow: hidden;
 }
