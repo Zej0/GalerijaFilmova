@@ -1,6 +1,3 @@
-/* Movie Gallery Custom Styles */
-
-/* Body background for dark movie theme */
 body {
     background-color: #121212;
     color: #ffffff;
@@ -14,22 +11,33 @@ main {
     flex: 1;
 }
 
-/* Movie card hover effects */
 .card {
-    transition: all 1s ease;
-    min-height: 750px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  min-height: 750px;
+  will-change: transform;
+  overflow: hidden;
 }
 
-.card:hover {
-    transform: scale(1.05) !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
+.animate__animated.animate__zoomIn {
+  animation-duration: 0.8s;
+  animation-fill-mode: none;
+}
+
+.card:not(.no-zoom):hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.card.no-zoom:hover {
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .big_card {
-    min-height: 850px;
+    min-height: 600px;
 }
 
-/* Navbar link hover animation */
 .nav-link {
     position: relative;
     text-decoration: none;
@@ -60,7 +68,6 @@ main {
     transition: none;
 }
 
-/* Custom animations for about page */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -81,14 +88,25 @@ main {
     }
 }
 
-/* Apply fade-in to photo (card img) on about page */
 .card img {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Apply slide-in to text (card-body) on about page */
 .card-body {
     animation: slideInLeft 1s ease-in-out;
 }
 
-/* Carousel and modal use Bootstrap defaults - no overrides */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn {
+  transition: 0.3s ease;
+}
+
+.carousel {
+  transition-duration: 0.8s;
+}
+
