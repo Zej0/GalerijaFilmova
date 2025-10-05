@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Movie Catalog - Browse our collection of movies">
+    <meta name="keywords" content="movies, catalog, film, posters">
+    <meta name="author" content="Your Name">
+    <title>Katalog Filmova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Galerija Filmova</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="filmovi.html">Filmovi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="oAutoru.html">O autoru</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-3" data-bs-toggle="modal" data-bs-target="#newsletterModal">Newsletter</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-5 pt-5">
+        <section class="container my-5 animate__animated animate__fadeInUp">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Movie Catalog</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card animate__animated animate__zoomIn">
+                        <img src="img/TheDarkKnight.jpg" class="card-img-top" alt="Movie 1 Poster - Action Thriller">
+                        <div class="card-body">
+                            <h5 class="card-title">The Dark Knight (2008)</h5>
+                            <p class="card-text">Betmen se suočava sa svojim najopasnijim neprijateljem – Džokerom, anarhistom koji želi da dokaže da je svet haotično mesto bez pravila. Film kombinuje akciju i psihološku dramu, stvarajući jedno od najboljih ostvarenja o superherojima..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card animate__animated animate__zoomIn">
+                        <img src="img/Inception.jpg" class="card-img-top" alt="Movie 2 Poster - Romantic Comedy">
+                        <div class="card-body">
+                            <h5 class="card-title">Inception (2010)</h5>
+                            <p class="card-text">Dom Koub je lopov koji ulazi u snove kako bi ukrao tajne iz podsvesti. Kada mu ponude mogućnost da „usadi“ ideju umesto da je ukrade, prihvata opasan zadatak. Film istražuje granicu između sna i stvarnosti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card animate__animated animate__zoomIn">
+                        <img src="img/Interstellar.jpg" class="card-img-top" alt="Movie 3 Poster - Sci-Fi Adventure">
+                        <div class="card-body">
+                            <h5 class="card-title">Interstellar (2014)</h5>
+                            <p class="card-text">U budućnosti gde Zemlja izumire, tim astronauta kreće kroz crvotočinu u potrazi za novim domom za čovečanstvo. Film spaja nauku, emocije i spektakularne vizuelne efekte. Glavna tema je snaga ljubavi i nade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card animate__animated animate__zoomIn">
+                        <img src="img/Matrix.jpg" class="card-img-top" alt="Movie 4 Poster - Horror Mystery">
+                        <div class="card-body">
+                            <h5 class="card-title">The Matrix (1999)</h5>
+                            <p class="card-text">Neo otkriva da je svet u kome živi samo iluzija koju kontrolišu mašine. Pridružuje se grupi pobunjenika koji se bore za oslobođenje čovečanstva iz virtuelne stvarnosti. Film kombinuje filozofiju, akciju i inovativne vizuelne efekte koji su promenili filmsku industriju.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card animate__animated animate__zoomIn">
+                        <img src="img/TheGodfather.jpg" class="card-img-top" alt="Movie 5 Poster - Drama">
+                        <div class="card-body">
+                            <h5 class="card-title">The Godfather (1972)</h5>
+                            <p class="card-text">Porodica Korleone vlada podzemljem Njujorka, ali se suočava sa izdajama i promenama u svetu mafije. Mladi Majkl Korleone, nevoljno, preuzima porodično carstvo i postaje nemilosrdni vođa. Film je epska priča o moći, porodici i moralu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card animate__animated animate__zoomIn">
+                        <img src="img/PulpFiction.jpg" class="card-img-top" alt="Movie 6 Poster - Animation">
+                        <div class="card-body">
+                            <h5 class="card-title">Pulp Fiction (1994)</h5>
+                            <p class="card-text">U isprepletanim pričama o gangsterima, plaćenicima i slučajnim herojima, Tarantino spaja crni humor, nasilje i pop-kulturu. Svaka scena donosi nepredvidive dijaloge i stilizovanu tenziju. Film je postao simbol modernog nezavisnog filma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 Galerija Filmova</p>
+        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#newsletterModal">Prijavite se za Newsletter</button>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="newsletterModalLabel">Prijavite se za Newsletter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email addresa</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Unesite email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Prijava</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

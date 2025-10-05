@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us - Get in touch with Movie Gallery">
+    <meta name="keywords" content="contact, movie gallery, form">
+    <meta name="author" content="Your Name">
+    <title>Kontakt - Galerija Filmova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Galerija Filmova</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="filmovi.html">Filmovi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="oAutoru.html">O autoru</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-3" data-bs-toggle="modal" data-bs-target="#newsletterModal">Newsletter</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-5 pt-5">
+        <section class="container my-5">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Kontaktirajte nas</h2>
+            <form class="needs-validation animate__fadeIn" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ime</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback">Unesite vase ime.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">Unesite validan email.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Poruka</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                    <div class="invalid-feedback">Unesite poruku.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Posalji</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 Galerija Filmova</p>
+        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#newsletterModal">Prijavite se za Newsletter</button>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="newsletterModalLabel">Prijavite se za Newsletter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email addresa</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Unesite email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Prijava</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    (function () {
+      'use strict'
+      var forms = document.querySelectorAll('.needs-validation')
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

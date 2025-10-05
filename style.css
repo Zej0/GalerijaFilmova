@@ -1,0 +1,94 @@
+/* Movie Gallery Custom Styles */
+
+/* Body background for dark movie theme */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Movie card hover effects */
+.card {
+    transition: all 1s ease;
+    min-height: 750px;
+}
+
+.card:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.big_card {
+    min-height: 850px;
+}
+
+/* Navbar link hover animation */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    margin: 0 0.5vw;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    filter: brightness(1.2);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    transition: none;
+}
+
+/* Custom animations for about page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in to photo (card img) on about page */
+.card img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Apply slide-in to text (card-body) on about page */
+.card-body {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Carousel and modal use Bootstrap defaults - no overrides */
