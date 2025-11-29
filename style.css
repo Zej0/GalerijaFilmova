@@ -88,6 +88,11 @@ main {
     }
 }
 
+.carouselImg{
+  object-fit: cover;
+  height: 600px;
+}
+
 .card img {
     animation: fadeIn 1s ease-in-out;
 }
